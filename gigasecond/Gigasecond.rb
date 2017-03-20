@@ -4,11 +4,11 @@
 #print Time.at(10000000000)
 #Divide 10^9 by the number of secs and convert to day
 class Gigasecond
-	def self.from(y,m,d,h,mi,s)
-	  # mytime.to_i	
-	gigasecond = 1000000000
-	sec_in_day = 86400
-	given_date = Time.utc(y,m,d).to_i
+  def self.from(y,m,d,h,mi,s)
+    # mytime.to_i
+    gigasecond = 1000000000
+    sec_in_day = 86400
+    given_date = Time.utc(y,m,d).to_i
     days_lived = (given_date/sec_in_day)
     days_lived_at_gigasecond = ((gigasecond*days_lived)/given_date).to_i
     total_days_lived = days_lived_at_gigasecond + days_lived
@@ -19,7 +19,7 @@ class Gigasecond
       
 
     #yrs = time.year - 1970 + (time.yday / 365.2425).round(2)      
-	end
+  end
 end
 
-#print Gigasecond.from(2015, 1, 24, 23, 59, 59) 
+print Gigasecond.from(2011, 4, 25, 0, 0, 0)
