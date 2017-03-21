@@ -2,9 +2,9 @@ class Complement
   def self.of_dna(dna)
     dna_rna = { "G" => "C" , "C" => "G" , "T" => "A" , "A" => "U"}
     unless dna_rna.key?(dna)
-      puts ""
+       ""
     else
-      puts dna_rna.fetch(dna)
+       dna_rna.fetch(dna)
     end
 
   #   if dna_rna.fetch(dna)
@@ -16,4 +16,4 @@ class Complement
 end
 
 
-Complement.of_dna("G")
+#Complement.of_dna("A")
